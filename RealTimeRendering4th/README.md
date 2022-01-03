@@ -1,2 +1,5 @@
-### CG_Learning
-这个repo记录CG学习过程中的一些笔记
+## Real Time Rendering 4th Edition
+### The Graphics Rndering Pipeline
+![pipeline](image/pipeline.bmp)
+The basic construction of the rendering pipeline, consisting of four stages: application,
+geometry processing, rasterization, and pixel processing
