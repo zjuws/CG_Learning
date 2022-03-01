@@ -1,5 +1,6 @@
 # Blender 学习笔记
-## 快捷键
+### 快捷键
+
 - G - Grab， X Y Z， 鼠标中建
 - R - Rotate
 - S - Scale
@@ -21,6 +22,29 @@
 - view camera :Ctrl + B 调整渲染视窗
 - ctrl + space 放大窗口
 - shading 模式 shift + ctrl 选中物体快速查看
-- motion track
+
+### vfx
+
+* Object Properties 设置visibilty Shadow Catcher
+* Reder Properties 设置 film Transparent
+
+### motion track
+
 - alt + D 隐藏追踪失败的
+
 - ctrl + T 追踪
+
+- Alt + S search area
+
+  #### 调整位置
+
+  * 放大摄像头
+  * set floor
+  * set cursor，r旋转
+
+
+
+### cursor
+
+* shift + s 放置cursor
+
