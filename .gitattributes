@@ -1,1 +1,2 @@
 *.epub filter=lfs diff=lfs merge=lfs -text
+paper/Drobot-SIGGRAPH_2020_VRS_Final.pptx filter=lfs diff=lfs merge=lfs -text
