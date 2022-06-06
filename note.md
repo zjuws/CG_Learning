@@ -23,6 +23,25 @@
 
 ### python
 
-* 工程地址 D:\Users\ws\PycharmProjects\pythonProject
+* 工程地址 D:\dev\pythonProject
 * pyqt https://maicss.gitbook.io/pyqt-chinese-tutoral/pyqt6/introduction
 * pyinstaller [pyinstaller用法 - 简书 (jianshu.com)](https://www.jianshu.com/p/5ca41c87628f)
+
+
+
+### 实用工具
+
+* windows终端
+* snipaste [截图工具]
+* Typora [md笔记]
+* WSL [linux环境]
+* win + V [剪切板]
+* XYplorer [文件浏览器]
+* TreeSize [查看文件大小]
+* Ghelper [翻墙]
+* aria2 [下载]
+* win +X [功能中心]
+* 抓住窗口的标题栏并摇动它  [win 设置]
+* potplayer [视频]
+* everything [搜索]
+* IrfanView [图片查看工具]
