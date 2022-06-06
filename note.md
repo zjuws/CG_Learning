@@ -45,3 +45,4 @@
 * potplayer [视频]
 * everything [搜索]
 * IrfanView [图片查看工具]
+* Tabnine AI [[Visual Studio Code | Install Tabnine Autocomplete for VSCode](https://www.tabnine.com/install/vscode)]
