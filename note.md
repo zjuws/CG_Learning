@@ -127,13 +127,7 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui
 * Tabnine AI [[Visual Studio Code | Install Tabnine Autocomplete for VSCode](https://www.tabnine.com/install/vscode)]
 * [Moo0 前端显示器 (免费) - 添加额外的有用的菜单到窗口](https://zhs.moo0.com/?top=https://zhs.moo0.com/software/WindowMenuPlus/)
 * [FSCapture.exe](..\..\tools\FSCapture100\FSCapture.exe) bluman VPISCJULXUFGDDXYAUYF
-- copy contents of *C:\Program Files\WindowsApps\CanonicalGroupLimited.UbuntuonWindows_1604.2017.922.0_x64__79rhkp1fndgsc* to another directory (I copied to *C:\Ubuntu*); Windows Explorer didn't let me browse this directory so I used Total Commander (Run As Administrator) to access it and copy
-- start ubuntu.exe from the new location and it should install
-- use ubuntu.exe from the new location going forward to start up bash etc.
-
-
-
-https://github.com/microsoft/WSL/issues/2577
+* [marktext/marktext: 📝A simple and elegant markdown editor, available for Linux, macOS and Windows. (github.com)](https://github.com/marktext/marktext/tree/develop)
 
 ### 技巧
 
@@ -189,6 +183,15 @@ ffmpeg -y -r 30.0 -i %5d.png -c:v libx264 -vf fps=30.0 -pix_fmt yuv420p -crf 17 
 ffmpeg -i output.mp4 -r 30 -f image2 %03d.png
 ```
 
+### Edge TTS && whisper
+
+D:\development\Edge-tts
+
+```
+edge-tts.exe --voice zh-CN-XiaoyiNeural --f .\output\output.txt --write-media .\output\output{AudioCount}.mp3 2>nul
+whisper xx.mp4 --model medium --language Chinese
+```
+
 ### Unity学习
 
 [通用渲染管线资源 | Universal RP | 12.1.1 (unity3d.com)](https://docs.unity3d.com/cn/Packages/com.unity.render-pipelines.universal@12.1/manual/universalrp-asset.html)
@@ -218,3 +221,7 @@ ffmpeg -i output.mp4 -r 30 -f image2 %03d.png
 [URP 中的延迟渲染路径 | Universal RP | 12.1.1 (unity3d.com)](https://docs.unity3d.com/cn/Packages/com.unity.render-pipelines.universal@12.1/manual/rendering/deferred-rendering-path.html)
 
 ![](assets/2023-07-09-21-38-37-image.png)
+
+```
+
+```
