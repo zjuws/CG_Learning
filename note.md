@@ -16,10 +16,18 @@
 
 * 游标定位
   
-  * Shifr +RMB 目视定位
+  * Shift +RMB 目视定位
   * 切换到编辑模式-点模式-选择一个点， 网格|吸附|游标到选中项
 
-* 复制物体， shift +
+* 复制物体，SHIFT  + D
+
+* 循环边 ALT + LMB;  SHIFT +　ALT + LMB
+
+* 并排边 CTRL＋ALT＋LMB
+
+* 滑移 g g
+
+* 倒角 CTRL + B
 
 ### unity
 
@@ -131,7 +139,7 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui
 
 ### 技巧
 
-```
+```js
 var input = document.querySelector(".webcast-chatroom___textarea");
 input.value = "求关注111"
 var button = document.querySelector(".webcast-chatroom___send-btn");
