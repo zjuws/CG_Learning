@@ -1,3 +1,70 @@
+### git代理
+1. git config --global http.proxy http://127.0.0.1:9991
+2. git config --global https.proxy http://127.0.0.1:9991
+### Animatediff
+
+#### 网址
+
+[guoyww/AnimateDiff: Official implementation of AnimateDiff. (github.com)](https://github.com/guoyww/AnimateDiff)
+
+[s9roll7/animatediff-cli-prompt-travel: animatediff prompt travel (github.com)](https://github.com/s9roll7/animatediff-cli-prompt-travel)
+
+#### 流程
+
+```
+cd animatediff-cli
+venv\Scripts\activate.bat
+
+# with this setup, it took about a minute to generate in my environment(RTX4090). VRAM usage was 6-7 GB
+# width 256 / height 384 / length 128 frames / context 16 frames
+animatediff generate -c config/prompts/prompt_travel.json -W 256 -H 384 -L 128 -C 16
+# 5min / 9-10GB
+animatediff generate -c config/prompts/prompt_travel.json -W 512 -H 768 -L 128 -C 16
+
+# upscale using controlnet (tile, line anime, ip2p, ref)
+# specify the directory of the frame generated in the above step
+# default config path is 'frames_dir/../prompt.json'
+# here, width=512 is specified, but even if the original size is 512, it is effective in increasing detail
+animatediff tile-upscale PATH_TO_TARGET_FRAME_DIRECTORY -c config/prompts/prompt_travel.json -W 512
+
+# upscale width to 768 (smoother than tile-upscale)
+animatediff refine PATH_TO_TARGET_FRAME_DIRECTORY -W 768
+# If generation takes an unusually long time, there is not enough vram.
+# Give up large size or reduce the size of the context.
+animatediff refine PATH_TO_TARGET_FRAME_DIRECTORY -W 1024 -C 6
+
+# change lora and prompt to make minor changes to the video.
+animatediff refine PATH_TO_TARGET_FRAME_DIRECTORY -c config/prompts/some_minor_changed.json
+```
+
+#### Video Sylization
+
+```
+cd animatediff-cli
+venv\Scripts\activate.bat
+
+# If you want to use the 'stylize' command, additional installation required
+python -m pip install -e .[stylize]
+
+# create config file from src video
+animatediff stylize create-config YOUR_SRC_MOVIE_FILE.mp4
+
+# Edit the config file by referring to the hint displayed in the log when the command finishes
+# It is recommended to specify a short length for the test run
+
+# generate(test run)
+# 16 frames
+animatediff stylize generate STYLYZE_DIR -L 16
+# 16 frames from the 200th frame
+animatediff stylize generate STYLYZE_DIR -L 16 -FO 200
+
+# If generation takes an unusually long time, there is not enough vram.
+# Give up large size or reduce the size of the context.
+
+# generate
+animatediff stylize generate STYLYZE_DIR
+```
+
 ### blender
 
 * 平移 - shift + 鼠标中间
@@ -28,6 +95,24 @@
 * 滑移 g g
 
 * 倒角 CTRL + B
+
+* 点倒角 SHIFT + CTRL + B
+
+* 挤出 E
+
+* 环切 CTRL + R
+
+* 四点填充 F
+
+* ALT + D 调整顶点
+
+* 塌陷， X，一个面坍缩为一个点
+
+* 局部视图 /
+
+* 物体合并， CTRL + J
+
+* 编辑模式， 选中相连项 CTRL + L
 
 ### unity
 
