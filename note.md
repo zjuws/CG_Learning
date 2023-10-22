@@ -1,4 +1,7 @@
+animatediff stylize generate "D:\development\animatediff-cli-prompt-travel\stylize\2023-10-06T09-33-16-sample-majicmix realistic 麦橘写实_v2威力加强典藏版"
+
 ### git代理
+
 1. git config --global http.proxy http://127.0.0.1:9991
 2. git config --global https.proxy http://127.0.0.1:9991
 ### Animatediff
@@ -14,6 +17,7 @@
 ```
 cd animatediff-cli
 venv\Scripts\activate.bat
+.\venv\Scripts\Activate.ps1
 
 # with this setup, it took about a minute to generate in my environment(RTX4090). VRAM usage was 6-7 GB
 # width 256 / height 384 / length 128 frames / context 16 frames
@@ -67,52 +71,88 @@ animatediff stylize generate STYLYZE_DIR
 
 ### blender
 
-* 平移 - shift + 鼠标中间
+* SHIFT + MMB :  平移 
 
-* 旋转 - 鼠标中间
+* MMB : 旋转 - 鼠标中键
 
 * 小键盘 各种视图
 
-* 顶视图，数字7键
+* 数字7键 ：顶视图
 
-* 正视图，数字1键
+* 数字1键 ： 正视图
 
-* 右视图，数字3键
+* 数字3键 ： 右视图
 
-* 四格试图，CTRL + ALT + Q
+* CTRL + ALT + Q ：四格试图
 
 * 游标定位
   
-  * Shift +RMB 目视定位
+  * Shift +RMB ：目视定位
   * 切换到编辑模式-点模式-选择一个点， 网格|吸附|游标到选中项
 
-* 复制物体，SHIFT  + D
+* SHIFT  + D : 复制物体
 
-* 循环边 ALT + LMB;  SHIFT +　ALT + LMB
+* ALT + LMB;  SHIFT +　ALT + LMB : 循环边 
 
-* 并排边 CTRL＋ALT＋LMB
+* CTRL＋ALT＋LMB : 并排边 
 
-* 滑移 g g
+* CTRL + SHIFT + LMB : 最短路径 
 
-* 倒角 CTRL + B
+* G G : 滑移 
 
-* 点倒角 SHIFT + CTRL + B
+* CTRL + B ：倒角 
 
-* 挤出 E
+* SHIFT + CTRL + B ：点倒角 
 
-* 环切 CTRL + R
+* R R : 3D旋转 
 
-* 四点填充 F
+* E ：挤出 
 
-* ALT + D 调整顶点
+* ALT + E ：挤出二级菜单 
 
-* 塌陷， X，一个面坍缩为一个点
+* CTRL + RMB ：挤出到光标 
 
-* 局部视图 /
+* CTRL + R ：环切 
 
-* 物体合并， CTRL + J
+* F ：四点填充
 
-* 编辑模式， 选中相连项 CTRL + L
+* ALT + D ：调整顶点
+
+* X：塌陷， 一个面坍缩为一个点
+
+* / ：局部视图
+
+* CTRL + J ：物体合并，
+
+* CTRL + A ：应用物体变换
+
+* F2：物体重命名，
+
+* ALT +B：裁剪视图，
+
+* m：新建集合
+
+* CTRL + L ：关联材质等， 编辑模式，选择相连项
+
+* Z ： 切换着色方式
+
+*  ~ ： 切换视图
+
+* ，：切换坐标系，
+
+*  . ：切换基准点
+
+* SHIFT + S：吸附
+
+* i： 内插面
+
+* A： 全选
+
+* CTRL + i： 反选
+
+* C： 刷选
+
+  
 
 ### unity
 
