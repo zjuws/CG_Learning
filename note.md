@@ -776,19 +776,17 @@ colmap:[Tutorial — COLMAP 3.9-dev documentation](https://colmap.github.io/tuto
       I_{diffuse}=I_{light}⋅k_d⋅max(0,N⋅L)
       $$
       
-
    2. 冯氏光照模型 (Phong Lighting Model)  包含环境光、漫反射光和镜面反射光的计算
       $$
       I=I_{ambient}+I_{diffuse}+I_{specular}
       $$
       
-
    3. 布林-冯光照模型 (Blinn-Phong Lighting Model)
       $$
       I_{specular} = I_{light}⋅k_s⋅max(0,N⋅H)^n
       $$
       
-
+   
 8. 说一说你对实时渲染和离线渲染的区别与联系的理解。
 
 9. 如何处理渲染中的深度测试和剔除？
@@ -878,3 +876,12 @@ colmap:[Tutorial — COLMAP 3.9-dev documentation](https://colmap.github.io/tuto
 一般来说基本上中等难度算法，偶尔会考hard，除了我发给你的codetop上接入字节leetcode上的hot100也是字节比较钟爱考察的，类似**接雨水，N皇后之类的hard题，**算法并不是考察的全部，主要看解题思路，面试官风格不同考察也不同
 
 
+
+## idea
+
+1. 端云高低帧
+2. opengtx 更多能力开发 --Good Culling\SAFR\..
+3. 如何更好地使用VRS-- *注视点渲染* （foveated rendering） [可变速率着色 — Godot Engine (4.x) 简体中文文档](https://docs.godotengine.org/zh-cn/4.x/tutorials/3d/variable_rate_shading.html)
+4. LTPO再进化？
+5. AI信息驱动方案
+6. 采样的硬件加速->bloom\超分等算法
