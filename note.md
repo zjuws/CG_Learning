@@ -213,6 +213,8 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui
 
 [NovelAI.Dev](https://novelai.dev/)
 
+shift-attention [yownas/shift-attention: In stable diffusion, generate a sequence of images shifting attention in the prompt. (github.com)](https://github.com/yownas/shift-attention)
+
 ### 实用工具
 
 * windows终端
@@ -235,6 +237,7 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui
 * [marktext/marktext: 📝A simple and elegant markdown editor, available for Linux, macOS and Windows. (github.com)](https://github.com/marktext/marktext/tree/develop)
 * D:\tools\spacesniffer_1_3_0_2 [查看文件大小]
 * 网页视频下载：[cobalt](https://cobalt.tools/)
+* Pixpin  [PixPin.exe](C:\Users\wangshu\AppData\Local\Programs\PixPin\PixPin.exe) 
 
 ### 技巧
 
@@ -881,7 +884,13 @@ colmap:[Tutorial — COLMAP 3.9-dev documentation](https://colmap.github.io/tuto
 
 1. 端云高低帧
 2. opengtx 更多能力开发 --Good Culling\SAFR\..
-3. 如何更好地使用VRS-- *注视点渲染* （foveated rendering） [可变速率着色 — Godot Engine (4.x) 简体中文文档](https://docs.godotengine.org/zh-cn/4.x/tutorials/3d/variable_rate_shading.html)
+3. 如何更好地使用VRS-- *注视点渲染* （foveated rendering） [可变速率着色 — Godot Engine (4.x) 简体中文文档](https://docs.godotengine.org/zh-cn/4.x/tutorials/3d/variable_rate_shading.html)  --分块计算速度
 4. LTPO再进化？
 5. AI信息驱动方案
 6. 采样的硬件加速->bloom\超分等算法
+
+
+
+## metal `simd_shuffle_and_fill_up` 
+
+The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `simd_shuffle_and_fill_down`, allow for efficient data manipulation within SIMD groups by shifting elements and filling the vacated positions with values from another vector. These functions are useful in optimizing tasks like convolution operations where adjacent texel values need to be processed efficiently.
