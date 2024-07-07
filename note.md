@@ -1,10 +1,58 @@
-animatediff stylize generate "D:\development\animatediff-cli-prompt-travel\stylize\2023-10-06T09-33-16-sample-majicmix realistic 麦橘写实_v2威力加强典藏版"
+## 语录
+
+win + H
+
+1. 分享一个很绝的思维，请一定要把它刻进你的 DNA 里。凡是发生皆有利于我，也就是说任何困难都是在帮助我们成长，让我们学会内观，完善自我。塞翁失马，焉知非福，老天每一次安排一定有他的理由。拥有这种心态和思维，积极面对一切所谓的坏事，最终也会转变成好事。每一件事情的发生都是在帮助我，就算是烂人闹事，我也能从中发现对我有利的一面，万物皆可为我所用，失败了，分手了，就是上天在保护我，朋友走散了，就是在帮助我净化圈子，一切都是为了我服务的。我渐渐把“这种事为什么会发生在我身上”的思想转变为“这种思想教会我什么”，然后我发现身边的一切都变了。记住这三句话：我的过去不等于我的未来，我的梦想远大于我的恐惧，我是一股不可阻挡的力量。
+
+
+
+
+
+## 图形
+
+### 论文阅读
+
+闫令琪 [Lingqi Yan: Research Homepage (ucsb.edu)](https://sites.cs.ucsb.edu/~lingqi/)
+
+#### Perceptual Model for Adaptive Local Shading and Refresh Rate
+
+> * When the displays spatial and temporal sampling frequency is lower than that of the displayed signal, we see aliasing artifacts which are a common occurrence in real-time graphics
+>
+> * CAMOJAB: CONTENT-ADAPTIVE METRIC OF JUDDER, ALIASING AND BLUR
+>
+> * our Adaptive Local Shading and Refresh Rate (ALSaRR) algorithm that uses our motion quality metric to determine the optimal distribution of shading rate and refresh rate under a given bandwidth constraint
+>
+> * Real-time implementation. To reduce the performance overhead of our method, the quality predictions of CaMoJAB (Eq. (1)) are precomputed for every texture, mipmap level, and shading rate and stored as polynomials of the form:
+>
+> * In comparison to Nvidia Adaptive Shading (NAS) [Yang et al. 2019], CaMoJAB is calibrated in physical units (pixels-per-degree, degreesper-second, cd/m2 ) and accounts for the display characteristics that affect motion quality perception, such as refresh rate, duty-cycle, and field-of-view. NAS may need to be recalibrated for a display of different size, brightness or pixel density than the one used by the authors. CaMoJAB has also been calibrated with several datasets, collected using psychophysical procedures, rather than tuned by the authors
+
+#### Mob-FGSR: Frame Generation and Super Resolution for Mobile Real-Time Rendering
+
+[sites.cs.ucsb.edu/~lingqi/publications/paper_sig24mobfgsr.pdf](https://sites.cs.ucsb.edu/~lingqi/publications/paper_sig24mobfgsr.pdf)
+
+> 作者为浙江大学的Sipeng Yang、Qingchuan Zhu、Junhao Zhuge等人以及OPPO Computing & Graphics Research Institute的Qiang Qiu、Chen Li、Yuzhong Yan等人。
+>
+> 随着智能手机等移动平台在交互式数字娱乐和增强现实中的应用增加，高质量实时渲染变得至关重要。然而，移动平台受限于GPU性能和功耗预算，需要先进的渲染加速技术。现有的超采样技术虽能提高图像质量，但依赖高端硬件和神经网络，不适合移动平台。
+>
+> 为解决此问题，作者提出了Mob - FGSR，一个专为移动设备设计的轻量级超采样框架，它集成了帧生成和超分辨率以提高实时渲染性能，主要包括以下三个关键部分：
+>
+> 1. **基于斑点的运动向量（MVs）重建**：通过分析连续帧估计精确的像素运动，使用渲染帧的MVs和深度来构建生成帧的MVs，并通过斑点方法和原子操作来处理冲突和间隙，从而实现准确的像素级运动估计。
+> 2. 高质量生成帧重建：
+>    - **插值**：使用相邻I帧的MVs分别对两个帧进行扭曲，然后通过优先从时间上更近的帧采样颜色、处理遮挡和阴影变化等方式来融合两个帧，以创建B帧。
+>    - **外推**：通过直接使用I帧1的MVs来填充外推帧MVs中的遮挡区域，以解决外推帧构建中遮挡区域的问题。
+> 3. **快速分辨率提升**：引入独立的SR模块，通过基于查找表（LUT）的方法进行高效图像扭曲，并通过像素校正和融合来提升图像分辨率。
+>
+> 作者进行了数据驱动的优化，包括学习LUT和参数校准。实验结果表明，该框架在Unity和UE场景中均有较好的性能，与现有方法相比具有一定的优势，且在移动设备上的运行效率极高。
+>
+> 该方法的局限性包括：在帧生成中忽略了阴影、反射和透明对象的变化，可能导致低帧率效果；MVs重建方法在遮挡区域可能引入重影伪影。未来的研究可以探索类似于G - buffer引导扭曲的轻量级遮挡填充方法来解决这些问题。
 
 ### git代理
 
 1. git config --global http.proxy http://127.0.0.1:9991
 2. git config --global https.proxy http://127.0.0.1:9991
 ### Animatediff
+
+animatediff stylize generate "D:\development\animatediff-cli-prompt-travel\stylize\2023-10-06T09-33-16-sample-majicmix realistic 麦橘写实_v2威力加强典藏版"
 
 #### 网址
 
@@ -134,17 +182,7 @@ animatediff stylize generate STYLYZE_DIR
 
 python -m eval.interpolator_cli --pattern D:\development\stable-diffusion-webui\outputs\img2img-images\20230513214507 --model_path pretrained_models\film_net\Style\saved_model --times_to_interpolate 2
 
-### Perceptual Model for Adaptive Local Shading and Refresh Rate
-
-* When the displays spatial and temporal sampling frequency is lower than that of the displayed signal, we see aliasing artifacts which are a common occurrence in real-time graphics
-
-* CAMOJAB: CONTENT-ADAPTIVE METRIC OF JUDDER, ALIASING AND BLUR
-
-* our Adaptive Local Shading and Refresh Rate (ALSaRR) algorithm that uses our motion quality metric to determine the optimal distribution of shading rate and refresh rate under a given bandwidth constraint
-
-* Real-time implementation. To reduce the performance overhead of our method, the quality predictions of CaMoJAB (Eq. (1)) are precomputed for every texture, mipmap level, and shading rate and stored as polynomials of the form:
-
-* In comparison to Nvidia Adaptive Shading (NAS) [Yang et al. 2019], CaMoJAB is calibrated in physical units (pixels-per-degree, degreesper-second, cd/m2 ) and accounts for the display characteristics that affect motion quality perception, such as refresh rate, duty-cycle, and field-of-view. NAS may need to be recalibrated for a display of different size, brightness or pixel density than the one used by the authors. CaMoJAB has also been calibrated with several datasets, collected using psychophysical procedures, rather than tuned by the authors
+* 
 
 ### 直播间
 
