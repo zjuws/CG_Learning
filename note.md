@@ -281,6 +281,26 @@ http://www.cad.zju.edu.cn/home/rwang/projects/power-optimization/21powernet.pdf
 
 综上所述，本文提出的实时功率预算渲染框架满足理想节能框架的要求，在不同平台和场景中具有通用性，且开销更少，灵活性更好，可与现有渲染引擎集成。
 
+#### 《FuseSR: Super Resolution for Real-time Rendering through Efficient Multi-resolution Fusion》
+
+[2310.09726 (arxiv.org)](https://arxiv.org/pdf/2310.09726)
+
+作者为Zhihua Zhong、Jingsen Zhu等，提出了一种用于实时渲染的高效超分辨率方法FuseSR。
+
+- **研究背景**：
+  - 随着对高分辨率、高刷新率和高真实感的需求增加，实时渲染的计算工作量急剧上升，现有的超分辨率（SR）方法难以满足需求。
+  - 现有方法主要利用低分辨率输入（如历史帧）中的信息，但这些输入缺乏高频细节，难以恢复高分辨率预测中的精细细节。
+  - 更高的性能改进需要增加特征分辨率和减少网络带宽，但这两者难以兼顾，限制了高分辨率SR的发展。
+- **方法概述**：
+  - **利用高分辨率G-buffer**：将低分辨率（LR）图像和高分辨率G-buffer作为输入，通过预积分BRDF解调（BRDF Demodulation）将着色结果分解为预积分BRDF和解调辐照度分量，训练网络预测高分辨率辐照度，以更好地平衡质量和效率。
+  - **H - Net网络架构**：采用像素解交织（pixel unshuffling）和交织（pixel shuffling）操作，无损地对齐高分辨率特征与低分辨率输入，并将特征融合到低分辨率网络主干中，同时保留高保真的高分辨率细节。
+- **实验结果**：
+  - **质量和性能比较**：在4×4和8×8上采样任务中，FuseSR方法在质量和性能上均显著优于其他基线方法。
+  - **实时渲染讨论**：集成FuseSR方法到渲染管线中确实比原生渲染高分辨率图像减少了计算开销，并且可以增加现代游戏设计更复杂场景的潜力。
+  - **消融实验**：验证了BRDF解调（BRDF Demodulation）和高分辨率G-buffer融合（HR G-buffer fusion）的有效性，以及像素解交织对齐策略（pixel unshuffling alignment strategy）的优越性。
+- **结论**：
+  - FuseSR方法能够根据相应的低分辨率帧预测高质量的4×4（甚至8×8）上采样重建，在质量和性能之间取得了出色的平衡，并且具有出色的通用性和时间稳定性。
+
 ### git代理
 
 1. git config --global http.proxy http://127.0.0.1:9991
@@ -505,6 +525,7 @@ python -m eval.interpolator_cli --pattern D:\development\stable-diffusion-webui\
 * D:\tools\spacesniffer_1_3_0_2 [查看文件大小]
 * 网页视频下载：[cobalt](https://cobalt.tools/)
 * Pixpin  [PixPin.exe](C:\Users\wangshu\AppData\Local\Programs\PixPin\PixPin.exe) 
+*  [TrafficMonitor.exe](..\..\tools\TrafficMonitor\TrafficMonitor.exe) 
 
 ### 技巧
 
@@ -607,6 +628,8 @@ whisper xx.mp4 --model medium --language Chinese
 
 [WebFG (atlas44.s3-us-west-2.amazonaws.com)](https://atlas44.s3-us-west-2.amazonaws.com/web-fusee-launcher/index.html)
 
+ [TegraRcmGUI.exe](E:\BaiduNetdiskDownload\TegraRcmGUI_v2.4_portable\TegraRcmGUI.exe) 
+
 ### 3D Gaussian Spaltting
 
 源码：https://github.com/graphdeco-inria/gaussian-splatting 
@@ -616,6 +639,7 @@ whisper xx.mp4 --model medium --language Chinese
 视频教程：[Getting Started With 3D Gaussian Splatting for Windows (Beginner Tutorial) (youtube.com)](https://www.youtube.com/watch?v=UXtuigy_wYc)
 
 ```
+E:\dev\gaussian-splatting\data
 1.ffmpeg -i {path to video} -qscale:v 1 -qmin 1 -vf fps={frame extraction rate} %04d.jpg
 
 2.<location>/input
@@ -627,11 +651,16 @@ whisper xx.mp4 --model medium --language Chinese
     
 3.python convert.py -s <location> [--resize] #If not resizing, ImageMagick is not needed
 
-4.activate gaussian_splatting
+powershell
+4.conda activate gaussian_splatting
 
 5.python train.py -s <path to COLMAP or NeRF Synthetic dataset>
 
 6../<SIBR install dir>/bin/SIBR_gaussianViewer_app -m <path to trained model>
+
+E:\dev\gaussian-splatting\output\
+
+E:\dev\gaussian-splatting\viewers\bin\SIBR_gaussianViewer_app.exe
 ```
 
 ![image-20240518161407171](./assets/image-20240518161407171.png)
@@ -1192,3 +1221,38 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 “∑” ：读作“西格玛” ，表示求和
 
 标准差的符号是“σ”（小写希腊字母 sigma），通常读作“西格玛” 
+
+### Mipmap的LOD层级选择
+
+在图形渲染中，Mipmap（多级渐远纹理）是一种用于提高纹理渲染效率和质量的技术。LOD（Level of Detail，细节层次）层级的选择对于正确使用 Mipmap 至关重要。以下是关于 Mipmap 的 LOD 层级选择的方法：
+
+**一、LOD 的概念**
+
+1. LOD 层级表示纹理在不同分辨率下的级别。较高的 LOD 层级对应较低的分辨率，较低的 LOD 层级对应较高的分辨率。
+2. Mipmap 由一系列不同分辨率的纹理组成，每个纹理对应一个 LOD 层级。例如，一个 256x256 的纹理可能有多个 LOD 层级，如 128x128、64x64、32x32 等。
+
+**二、LOD 层级选择的因素**
+
+1. 屏幕像素大小
+   - 当纹理在屏幕上占据的像素大小较小时，选择较高的 LOD 层级可以提高渲染效率，因为较小的纹理需要较少的内存和处理时间。
+   - 可以通过计算纹理在屏幕上的投影大小来确定合适的 LOD 层级。例如，如果纹理在屏幕上的投影大小为 16x16 像素，那么选择一个较低分辨率的 LOD 层级可能更合适。
+2. 距离和视角
+   - 当物体距离相机较远时，选择较高的 LOD 层级可以减少不必要的细节，提高渲染效率。
+   - 视角也会影响 LOD 层级的选择。例如，当从侧面观察物体时，可能需要更高的分辨率来显示物体的细节，而当从远处观察物体时，选择较低的分辨率可以提高性能。
+3. 纹理过滤方式
+   - 不同的纹理过滤方式会影响 LOD 层级的选择。例如，线性过滤通常需要更高的 LOD 层级来避免出现锯齿和模糊，而最近邻过滤可以使用较低的 LOD 层级。
+   - 在选择 LOD 层级时，需要考虑纹理过滤方式对渲染效果的影响。
+
+**三、LOD 层级选择的方法**
+
+1. 手动选择
+   - 在某些情况下，可以手动选择合适的 LOD 层级。例如，可以根据物体的距离、视角或屏幕像素大小等因素，在代码中手动设置纹理的 LOD 层级。
+   - 这种方法需要对渲染场景有一定的了解，并进行适当的调整，以获得最佳的性能和质量。
+2. 自动选择
+   - 大多数图形 API 提供了自动选择 LOD 层级的功能。例如，在 OpenGL 和 Vulkan 中，可以使用纹理过滤参数来指定自动选择 LOD 层级的方式。
+   - 自动选择 LOD 层级通常基于纹理在屏幕上的投影大小、距离和视角等因素进行计算，可以提供较好的性能和质量。
+3. 基于硬件的选择
+   - 一些图形硬件可能提供了基于硬件的 LOD 层级选择功能。例如，一些显卡可能支持硬件加速的 Mipmap 生成和选择，可以提高渲染效率。
+   - 在使用基于硬件的 LOD 层级选择时，需要了解硬件的特性和限制，并进行适当的配置和优化。
+
+总之，选择合适的 Mipmap 的 LOD 层级需要考虑多个因素，包括屏幕像素大小、距离和视角、纹理过滤方式等。可以通过手动选择、自动选择或基于硬件的选择等方法来确定合适的 LOD 层级，以获得最佳的性能和质量。在实际应用中，需要根据具体的渲染场景和需求进行调整和优化。
