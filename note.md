@@ -620,9 +620,13 @@ whisper xx.mp4 --model medium --language Chinese
 
 ![](assets/2023-07-09-21-38-37-image.png)
 
-```
+#### URP
 
-```
+[Deferred Rendering Path in URP | Universal RP | 14.0.11 (unity3d.com)](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manual/rendering/deferred-rendering-path.html)
+
+#### Forward vs Deferred vs Forward+
+
+[（译）Forward vs Deferred vs Forward+ Rendering with DirectX 11 | 登峰造极者，殊途亦同归。 (lfzxb.top)](https://www.lfzxb.top/forward-vs-deferred-vs-forward-plus/)
 
 ### switch
 
@@ -1256,3 +1260,7 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
    - 在使用基于硬件的 LOD 层级选择时，需要了解硬件的特性和限制，并进行适当的配置和优化。
 
 总之，选择合适的 Mipmap 的 LOD 层级需要考虑多个因素，包括屏幕像素大小、距离和视角、纹理过滤方式等。可以通过手动选择、自动选择或基于硬件的选择等方法来确定合适的 LOD 层级，以获得最佳的性能和质量。在实际应用中，需要根据具体的渲染场景和需求进行调整和优化。
+
+### Games101
+
+[GAMES101-现代计算机图形学入门-闫令琪 - 哔哩哔哩 (bilibili.com)](https://www.bilibili.com/read/cv21513694/?spm_id_from=333.999.0.0&jump_opus=1)
