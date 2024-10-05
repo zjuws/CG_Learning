@@ -496,31 +496,6 @@ shift-attention [yownas/shift-attention: In stable diffusion, generate a sequenc
 
 python -m eval.interpolator_cli --pattern D:\development\stable-diffusion-webui\outputs\img2img-images\20230513214507 --model_path pretrained_models\film_net\Style\saved_model --times_to_interpolate 2
 
-### 实用工具
-
-* windows终端
-* snipaste [截图工具] [Snipaste.exe](..\..\tools\Snipaste-2.8.5-Beta-x64\Snipaste.exe) 
-* Typora [md笔记]
-* WSL [linux环境]
-* win + V [剪切板]
-* XYplorer [文件浏览器]
-* TreeSize [查看文件大小]
-* Ghelper [翻墙]
-* aria2 [下载]
-* win +X [功能中心]
-* 抓住窗口的标题栏并摇动它  [win 设置]
-* potplayer [视频]
-* everything [搜索]
-* IrfanView [图片查看工具]
-* Tabnine AI [[Visual Studio Code | Install Tabnine Autocomplete for VSCode](https://www.tabnine.com/install/vscode)]
-* [Moo0 前端显示器 (免费) - 添加额外的有用的菜单到窗口](https://zhs.moo0.com/?top=https://zhs.moo0.com/software/WindowMenuPlus/)
-* [FSCapture.exe](..\..\tools\FSCapture100\FSCapture.exe) bluman VPISCJULXUFGDDXYAUYF
-* [marktext/marktext: 📝A simple and elegant markdown editor, available for Linux, macOS and Windows. (github.com)](https://github.com/marktext/marktext/tree/develop)
-* D:\tools\spacesniffer_1_3_0_2 [查看文件大小]
-* 网页视频下载：[cobalt](https://cobalt.tools/)
-* Pixpin  [PixPin.exe](C:\Users\wangshu\AppData\Local\Programs\PixPin\PixPin.exe) 
-*  [TrafficMonitor.exe](..\..\tools\TrafficMonitor\TrafficMonitor.exe) 
-
 ### 技巧
 
 ```js
@@ -647,7 +622,30 @@ colmap:[Tutorial — COLMAP 3.9-dev documentation](https://colmap.github.io/tuto
 
 https://github.com/ConnectAI-E/feishu-openai?tab=readme-ov-file#详细配置步骤)
 
+## 实用工具
 
+* windows终端
+* snipaste [截图工具] [Snipaste.exe](..\..\tools\Snipaste-2.8.5-Beta-x64\Snipaste.exe) 
+* Typora [md笔记]
+* WSL [linux环境]
+* win + V [剪切板]
+* XYplorer [文件浏览器]
+* TreeSize [查看文件大小]
+* Ghelper [翻墙]
+* aria2 [下载]
+* win +X [功能中心]
+* 抓住窗口的标题栏并摇动它  [win 设置]
+* potplayer [视频]
+* everything [搜索]
+* IrfanView [图片查看工具]
+* Tabnine AI [[Visual Studio Code | Install Tabnine Autocomplete for VSCode](https://www.tabnine.com/install/vscode)]
+* [Moo0 前端显示器 (免费) - 添加额外的有用的菜单到窗口](https://zhs.moo0.com/?top=https://zhs.moo0.com/software/WindowMenuPlus/)
+* [FSCapture.exe](..\..\tools\FSCapture100\FSCapture.exe) bluman VPISCJULXUFGDDXYAUYF
+* [marktext/marktext: 📝A simple and elegant markdown editor, available for Linux, macOS and Windows. (github.com)](https://github.com/marktext/marktext/tree/develop)
+* D:\tools\spacesniffer_1_3_0_2 [查看文件大小]
+* 网页视频下载：[cobalt](https://cobalt.tools/)
+* Pixpin  [PixPin.exe](C:\Users\wangshu\AppData\Local\Programs\PixPin\PixPin.exe) 
+* [TrafficMonitor.exe](..\..\tools\TrafficMonitor\TrafficMonitor.exe) 
 
 ## 设计模式
 
@@ -1233,7 +1231,7 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 总之，选择合适的 Mipmap 的 LOD 层级需要考虑多个因素，包括屏幕像素大小、距离和视角、纹理过滤方式等。可以通过手动选择、自动选择或基于硬件的选择等方法来确定合适的 LOD 层级，以获得最佳的性能和质量。在实际应用中，需要根据具体的渲染场景和需求进行调整和优化。
 
-### Games101
+## Games101
 
 [GAMES101-现代计算机图形学入门-闫令琪 - 哔哩哔哩 (bilibili.com)](https://www.bilibili.com/read/cv21513694/?spm_id_from=333.999.0.0&jump_opus=1)
 
@@ -1241,11 +1239,11 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 [他人笔记](https://www.bilibili.com/opus/757184394981015575?spm_id_from=333.999.collection.opus.click)
 
-#### Transformation
+### Transformation
 
 [Lecture 03 Transformation_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=3&vd_source=c5f5babdad262f8e9b8356b8fad45391)
 
-##### 2D Transformations
+#### 2D Transformations
 
 ![image-20241005101939279](./assets/image-20241005101939279.png)
 
@@ -1261,7 +1259,7 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 ![image-20241005102634696](./assets/image-20241005102634696.png)
 
-##### Affine Transformations
+#### Affine Transformations
 
 ![image-20241005102728184](./assets/image-20241005102728184.png)
 
@@ -1269,7 +1267,7 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 ![image-20241005103235589](./assets/image-20241005103235589.png)
 
-##### 3D Transformations
+#### 3D Transformations
 
 [Lecture 04 Transformation Cont._哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=4)
 
@@ -1279,11 +1277,11 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 ![image-20241005104548576](./assets/image-20241005104548576.png)
 
-###### 3D Rotations
+##### 3D Rotations
 
 ![image-20241005110151169](./assets/image-20241005110151169.png)
 
-##### View/Camera Transformation
+#### View/Camera Transformation
 
 ![image-20241005143528646](./assets/image-20241005143528646.png)
 
@@ -1293,13 +1291,13 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 ![image-20241005144013494](./assets/image-20241005144013494.png)
 
-##### Projection transformation
+#### Projection transformation
 
 ![image-20241005144349335](./assets/image-20241005144349335.png)
 
 ![image-20241005144453157](./assets/image-20241005144453157.png)
 
-###### Orthographic
+##### Orthographic
 
 ![image-20241005144538757](./assets/image-20241005144538757.png)
 
@@ -1307,7 +1305,7 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 ![image-20241005144919814](./assets/image-20241005144919814.png)
 
-###### Perspective Projection
+##### Perspective Projection
 
 ![image-20241005145129999](./assets/image-20241005145129999.png)
 
@@ -1325,15 +1323,17 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 ![image-20241005152846333](./assets/image-20241005152846333.png)
 
+### Rasterization
 
 
-#### Shading
+
+### Shading
 
 [Lecture 07 Shading 1 (Illumination, Shading and  Graphics Pipeline)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=7&vd_source=c5f5babdad262f8e9b8356b8fad45391)
 
 ![image-20241005080853634](./assets/image-20241005080853634.png)
 
-##### diffuse
+#### diffuse
 
 ![image-20241005080930369](./assets/image-20241005080930369.png)
 
@@ -1343,7 +1343,7 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 ![image-20241005081141774](./assets/image-20241005081141774.png)
 
-##### Specular
+#### Specular
 
 [Lecture 08 Shading 2 (Shading, Pipeline and Texture Mapping)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=8&vd_source=c5f5babdad262f8e9b8356b8fad45391)
 
@@ -1353,15 +1353,15 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 ![image-20241005081425111](./assets/image-20241005081425111.png)
 
-##### Ambient
+#### Ambient
 
 ![image-20241005081600440](./assets/image-20241005081600440.png)
 
-##### Blinn-Phong
+#### Blinn-Phong
 
 ![image-20241005081630301](./assets/image-20241005081630301.png)
 
-#### Mipmap
+### Mipmap
 
 [Lecture 09 Shading 3 (Texture Mapping Cont.)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744/?p=9&vd_source=c5f5babdad262f8e9b8356b8fad45391)
 
@@ -1369,17 +1369,17 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 ![image-20241005082153016](./assets/image-20241005082153016.png)
 
-##### 各向异性
+#### 各向异性
 
 ![image-20241005082303740](./assets/image-20241005082303740.png)
 
 ![image-20241005082336777](./assets/image-20241005082336777.png)
 
-#### Geometry
+### Geometry
 
 [Lecture 10 Geometry 1 (Introduction)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=10&vd_source=c5f5babdad262f8e9b8356b8fad45391)
 
-##### Bump Mapping
+#### Bump Mapping
 
 ![image-20241005090809265](./assets/image-20241005090809265.png)
 
@@ -1389,23 +1389,23 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 ![image-20241005090957338](./assets/image-20241005090957338.png)
 
-##### Displacemant mapping
+#### Displacemant mapping
 
 ![image-20241005084537620](./assets/image-20241005084537620.png)
 
 
 
-##### Distance Functions(Implicit)
+#### Distance Functions(Implicit)
 
 ![image-20241005084352913](./assets/image-20241005084352913.png)
 
 ![image-20241005084444222](./assets/image-20241005084444222.png)
 
-##### Bezier Curve
+#### Bezier Curve
 
 [Lecture 11 Geometry 2 (Curves and Surfaces)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=11&vd_source=c5f5babdad262f8e9b8356b8fad45391)
 
-##### Loop Subdivision
+#### Loop Subdivision
 
 [Lecture 12 Geometry 3_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=12&vd_source=c5f5babdad262f8e9b8356b8fad45391)
 
@@ -1415,7 +1415,7 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 ![image-20241005100612799](./assets/image-20241005100612799.png)
 
-##### Mesh Simplification
+#### Mesh Simplification
 
 ![image-20241005100747271](./assets/image-20241005100747271.png)
 
@@ -1431,9 +1431,9 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 ![image-20241005101817550](./assets/image-20241005101817550.png)
 
-#### Ray Tracing
+### Ray Tracing
 
-##### 渲染方程
+#### 渲染方程
 
 [Lecture 16 Ray Tracing 4_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=16&vd_source=c5f5babdad262f8e9b8356b8fad45391)
 
