@@ -1239,6 +1239,8 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 [Snail (shadertoy.com)](https://www.shadertoy.com/view/ld3Gz2)
 
+[他人笔记](https://www.bilibili.com/opus/757184394981015575?spm_id_from=333.999.collection.opus.click)
+
 #### Transformation
 
 [Lecture 03 Transformation_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=3&vd_source=c5f5babdad262f8e9b8356b8fad45391)
@@ -1269,11 +1271,61 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 ##### 3D Transformations
 
+[Lecture 04 Transformation Cont._哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=4)
+
 ![image-20241005103810335](./assets/image-20241005103810335.png)
 
 ![image-20241005103927666](./assets/image-20241005103927666.png)
 
 ![image-20241005104548576](./assets/image-20241005104548576.png)
+
+###### 3D Rotations
+
+![image-20241005110151169](./assets/image-20241005110151169.png)
+
+##### View/Camera Transformation
+
+![image-20241005143528646](./assets/image-20241005143528646.png)
+
+![image-20241005143555753](./assets/image-20241005143555753.png)
+
+![image-20241005143734410](./assets/image-20241005143734410.png)
+
+![image-20241005144013494](./assets/image-20241005144013494.png)
+
+##### Projection transformation
+
+![image-20241005144349335](./assets/image-20241005144349335.png)
+
+![image-20241005144453157](./assets/image-20241005144453157.png)
+
+###### Orthographic
+
+![image-20241005144538757](./assets/image-20241005144538757.png)
+
+![image-20241005144716648](./assets/image-20241005144716648.png)
+
+![image-20241005144919814](./assets/image-20241005144919814.png)
+
+###### Perspective Projection
+
+![image-20241005145129999](./assets/image-20241005145129999.png)
+
+![image-20241005145713092](./assets/image-20241005145713092.png)
+
+![image-20241005145756717](./assets/image-20241005145756717.png)
+
+![image-20241005150419632](./assets/image-20241005150419632.png)
+
+<img src="./assets/image-20241005150453437.png" alt="image-20241005150453437" style="zoom:33%;" />
+
+![image-20241005153658126](./assets/image-20241005153658126.png)
+
+![image-20241005153727873](./assets/image-20241005153727873.png)
+
+![image-20241005152846333](./assets/image-20241005152846333.png)
+
+
 
 #### Shading
 
