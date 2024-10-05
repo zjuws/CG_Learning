@@ -429,12 +429,6 @@ animatediff stylize generate STYLYZE_DIR
 * ALT + G:清除位移
 * 插件   [machin3io/MACHIN3tools: MACHIN3tools is a free, continuously evolving collection of blender tools and pie menus in a single customizable package. (github.com)](https://github.com/machin3io/MACHIN3tools)
 
-### unity
-
-* 平移 - 鼠标中间
-* 旋转 - Alt + 鼠标左键
-* 自由行走 - 鼠标右键 + wasd
-
 ### python
 
 * 工程地址 D:\dev\pythonProject
@@ -592,33 +586,11 @@ whisper xx.mp4 --model medium --language Chinese
 
 ### Unity学习
 
-[通用渲染管线资源 | Universal RP | 12.1.1 (unity3d.com)](https://docs.unity3d.com/cn/Packages/com.unity.render-pipelines.universal@12.1/manual/universalrp-asset.html)
+#### 操作
 
-| 属性                   | 描述                                                                                                                                                                                                                                                   |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **SRP Batcher**      | 选中此复选框可启用 SRP Batcher。如果有许多不同材质使用相同的着色器，这将非常有用。SRP Batcher 是一个内部循环，可以在不影响 GPU 性能的情况下加速 CPU 渲染。使用 SRP Batcher 时，它将替代 SRP 渲染代码内部循环。                                                                                                                    |
-| **Dynamic Batching** | 启用 [Dynamic Batching](https://docs.unity3d.com/Manual/DrawCallBatching.html) 可以使渲染管线自动批处理一系列共享相同材质的小动态对象。这对于不支持 GPU 实例化的平台和图形 API 非常有用。如果目标硬件确实支持 GPU 实例化，请禁用 **Dynamic Batching**。可以在运行时更改此设置。                                                      |
-| **Store Actions**    | 定义 Unity 是丢弃还是存储 DrawObjects 通道的渲染目标。选择 **Store** 选项可显著增加移动端和基于瓦片的 GPU 上的内存带宽。 <br>**Auto**：Unity 默认使用 **Discard** 选项，如果检测到任何注入的通道，则回退到 **Store** 选项。 <br>**Discard**：Unity 会丢弃以后不重用的渲染通道的渲染目标（较低的内存带宽）。 <br>**Store**：Unity 存储每个通道的所有渲染目标（更高的内存带宽）。 |
-
-**Use Adaptive Performance**
-
-[通用渲染管线中的渲染 | Universal RP | 12.1.1 (unity3d.com)](https://docs.unity3d.com/cn/Packages/com.unity.render-pipelines.universal@12.1/manual/rendering-in-universalrp.html)
-
-![](assets/2023-07-09-21-11-10-image.png)
-
-[通用渲染器 | Universal RP | 12.1.1 (unity3d.com)](https://docs.unity3d.com/cn/Packages/com.unity.render-pipelines.universal@12.1/manual/urp-universal-renderer.html)
-
-![](assets/2023-07-09-21-19-33-image.png)
-
-![](assets/2023-07-09-21-22-22-image.png)
-
-[Unity - Scripting API: Rendering.ScriptableRenderContext.BeginRenderPass (unity3d.com)](https://docs.unity3d.com/ScriptReference/Rendering.ScriptableRenderContext.BeginRenderPass.html)
-
-![](assets/2023-07-09-21-38-53-image.png)
-
-[URP 中的延迟渲染路径 | Universal RP | 12.1.1 (unity3d.com)](https://docs.unity3d.com/cn/Packages/com.unity.render-pipelines.universal@12.1/manual/rendering/deferred-rendering-path.html)
-
-![](assets/2023-07-09-21-38-37-image.png)
+* 平移 - 鼠标中间
+* 旋转 - Alt + 鼠标左键
+* 自由行走 - 鼠标右键 + wasd
 
 #### URP
 
@@ -1264,3 +1236,153 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 ### Games101
 
 [GAMES101-现代计算机图形学入门-闫令琪 - 哔哩哔哩 (bilibili.com)](https://www.bilibili.com/read/cv21513694/?spm_id_from=333.999.0.0&jump_opus=1)
+
+[Snail (shadertoy.com)](https://www.shadertoy.com/view/ld3Gz2)
+
+#### Transformation
+
+[Lecture 03 Transformation_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=3&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+##### 2D Transformations
+
+![image-20241005101939279](./assets/image-20241005101939279.png)
+
+![image-20241005102009190](./assets/image-20241005102009190.png)
+
+![image-20241005102028217](./assets/image-20241005102028217.png)
+
+![image-20241005102052178](./assets/image-20241005102052178.png)
+
+![image-20241005102321261](./assets/image-20241005102321261.png)
+
+![image-20241005102344524](./assets/image-20241005102344524.png)
+
+![image-20241005102634696](./assets/image-20241005102634696.png)
+
+##### Affine Transformations
+
+![image-20241005102728184](./assets/image-20241005102728184.png)
+
+![image-20241005102820321](./assets/image-20241005102820321.png)
+
+![image-20241005103235589](./assets/image-20241005103235589.png)
+
+##### 3D Transformations
+
+![image-20241005103810335](./assets/image-20241005103810335.png)
+
+![image-20241005103927666](./assets/image-20241005103927666.png)
+
+![image-20241005104548576](./assets/image-20241005104548576.png)
+
+#### Shading
+
+[Lecture 07 Shading 1 (Illumination, Shading and  Graphics Pipeline)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=7&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+![image-20241005080853634](./assets/image-20241005080853634.png)
+
+##### diffuse
+
+![image-20241005080930369](./assets/image-20241005080930369.png)
+
+![image-20241005080957925](./assets/image-20241005080957925.png)
+
+![image-20241005081055244](./assets/image-20241005081055244.png)
+
+![image-20241005081141774](./assets/image-20241005081141774.png)
+
+##### Specular
+
+[Lecture 08 Shading 2 (Shading, Pipeline and Texture Mapping)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=8&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+![image-20241005081245318](./assets/image-20241005081245318.png)
+
+使用指数的原因是cos 的容忍度太高
+
+![image-20241005081425111](./assets/image-20241005081425111.png)
+
+##### Ambient
+
+![image-20241005081600440](./assets/image-20241005081600440.png)
+
+##### Blinn-Phong
+
+![image-20241005081630301](./assets/image-20241005081630301.png)
+
+#### Mipmap
+
+[Lecture 09 Shading 3 (Texture Mapping Cont.)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744/?p=9&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+![image-20241005082042511](./assets/image-20241005082042511.png)
+
+![image-20241005082153016](./assets/image-20241005082153016.png)
+
+##### 各向异性
+
+![image-20241005082303740](./assets/image-20241005082303740.png)
+
+![image-20241005082336777](./assets/image-20241005082336777.png)
+
+#### Geometry
+
+[Lecture 10 Geometry 1 (Introduction)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=10&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+##### Bump Mapping
+
+![image-20241005090809265](./assets/image-20241005090809265.png)
+
+![image-20241005090914796](./assets/image-20241005090914796.png)
+
+![image-20241005090945612](./assets/image-20241005090945612.png)
+
+![image-20241005090957338](./assets/image-20241005090957338.png)
+
+##### Displacemant mapping
+
+![image-20241005084537620](./assets/image-20241005084537620.png)
+
+
+
+##### Distance Functions(Implicit)
+
+![image-20241005084352913](./assets/image-20241005084352913.png)
+
+![image-20241005084444222](./assets/image-20241005084444222.png)
+
+##### Bezier Curve
+
+[Lecture 11 Geometry 2 (Curves and Surfaces)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=11&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+##### Loop Subdivision
+
+[Lecture 12 Geometry 3_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=12&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+![image-20241005100349306](./assets/image-20241005100349306.png)
+
+![image-20241005100422749](./assets/image-20241005100422749.png)
+
+![image-20241005100612799](./assets/image-20241005100612799.png)
+
+##### Mesh Simplification
+
+![image-20241005100747271](./assets/image-20241005100747271.png)
+
+![image-20241005100800194](./assets/image-20241005100800194.png)
+
+![image-20241005101513083](./assets/image-20241005101513083.png)
+
+#### Shadow mapping
+
+![image-20241005101634217](./assets/image-20241005101634217.png)
+
+![image-20241005101737221](./assets/image-20241005101737221.png)
+
+![image-20241005101817550](./assets/image-20241005101817550.png)
+
+#### Ray Tracing
+
+##### 渲染方程
+
+[Lecture 16 Ray Tracing 4_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=16&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+![image-20241005080426982](./assets/image-20241005080426982.png)
