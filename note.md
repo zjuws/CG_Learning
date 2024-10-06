@@ -1325,7 +1325,25 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 ### Rasterization
 
+[Lecture 05 Rasterization 1 (Triangles)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=5&vd_source=c5f5babdad262f8e9b8356b8fad45391)
 
+![image-20241005181019101](./assets/image-20241005181019101.png)
+
+![image-20241005181839293](./assets/image-20241005181839293.png)
+
+![image-20241005182136559](./assets/image-20241005182136559.png)
+
+![image-20241005182224948](./assets/image-20241005182224948.png)
+
+#### Antialiasing
+
+[Lecture 06 Rasterization 2 (Antialiasing and Z-Buffering)_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=6&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+![image-20241006113931658](./assets/image-20241006113931658.png)
+
+![image-20241006114332258](./assets/image-20241006114332258.png)
+
+![image-20241006114156992](./assets/image-20241006114156992.png)
 
 ### Shading
 
@@ -1433,8 +1451,125 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 ### Ray Tracing
 
+[Lecture 13 Ray Tracing 1_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=13&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+#### Why Ray Tracing
+
+![image-20241006194415681](./assets/image-20241006194415681.png)
+
+![image-20241006203419263](./assets/image-20241006203419263.png)
+
+#### Ray Intersection
+
+[Lecture 14 Ray Tracing 2_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=14&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+![image-20241006203518191](./assets/image-20241006203518191.png)
+
+![image-20241006203711741](./assets/image-20241006203711741.png)
+
+![image-20241006203949924](./assets/image-20241006203949924.png)
+
+![image-20241006204154162](./assets/image-20241006204154162.png)
+
+#### 加速结构
+
+![**image-20241006204354797**](./assets/image-20241006204354797.png)
+
+![image-20241006204506905](./assets/image-20241006204506905.png)
+
+![image-20241006204626223](./assets/image-20241006204626223.png)
+
+![image-20241006204827946](./assets/image-20241006204827946.png)
+
+![image-20241006204839847](./assets/image-20241006204839847.png)
+
+#### 辐射度量学
+
+[Lecture 14 Ray Tracing 2_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=14&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+##### Radiant flux (辐射通量)
+
+
+
+![image-20241006205307125](./assets/image-20241006205307125.png)
+
+![image-20241006205344119](./assets/image-20241006205344119.png)
+
+##### Radiant Intensity （辐射强度）
+
+![image-20241006205402326](./assets/image-20241006205402326.png)
+
+![image-20241006205612585](./assets/image-20241006205612585.png)
+
+![image-20241006205745557](./assets/image-20241006205745557.png)
+
+![image-20241006205846767](./assets/image-20241006205846767.png)
+
+![image-20241006210105236](./assets/image-20241006210105236.png)
+
+##### Irradiance（辐照度）
+
+![image-20241006210258695](./assets/image-20241006210258695.png)
+
+![image-20241006210346242](./assets/image-20241006210346242.png)
+
+##### Radiance（辐射率）
+
+![image-20241006210456548](./assets/image-20241006210456548.png)
+
+![image-20241006210509004](./assets/image-20241006210509004.png)
+
+![image-20241006213224106](./assets/image-20241006213224106.png)
+
+![image-20241006213510407](./assets/image-20241006213510407.png)
+
+![image-20241006213612949](./assets/image-20241006213612949.png)
+
+![image-20241006213713716](./assets/image-20241006213713716.png)
+
+##### BRDF (Bidirectional Reflectance Distribution Function)
+
+![image-20241006214637584](./assets/image-20241006214637584.png)
+
+![image-20241006215019653](./assets/image-20241006215019653.png)
+
+![image-20241006215407972](./assets/image-20241006215407972.png)
+
+![image-20241006215735672](./assets/image-20241006215735672.png)
+
 #### 渲染方程
+
+![image-20241006220117205](./assets/image-20241006220117205.png)
+
+![image-20241006220318775](./assets/image-20241006220318775.png)
+
+![image-20241006220415706](./assets/image-20241006220415706.png)
+
+![image-20241006220718703](./assets/image-20241006220718703.png)
+
+![image-20241006220733394](./assets/image-20241006220733394.png)
+
+![image-20241006220940097](./assets/image-20241006220940097.png)
+
+
 
 [Lecture 16 Ray Tracing 4_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=16&vd_source=c5f5babdad262f8e9b8356b8fad45391)
 
 ![image-20241005080426982](./assets/image-20241005080426982.png)
+
+![image-20241006221359290](./assets/image-20241006221359290.png)
+
+#### Monte Carlo Integration
+
+![image-20241006221921545](./assets/image-20241006221921545.png)
+
+![image-20241006221937000](./assets/image-20241006221937000.png)
+
+![image-20241006222009602](./assets/image-20241006222009602.png)
+
+![image-20241006222016877](./assets/image-20241006222016877.png)
+
+![image-20241006222319035](./assets/image-20241006222319035.png)
+
+#### Path Tracing
+
