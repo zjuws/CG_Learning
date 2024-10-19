@@ -1573,3 +1573,75 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 #### Path Tracing
 
+![image-20241007094252724](./assets/image-20241007094252724.png)
+
+![image-20241007094235857](./assets/image-20241007094235857.png)
+
+![image-20241007095111338](./assets/image-20241007095111338.png)
+
+![image-20241007095518044](./assets/image-20241007095518044.png)
+
+![image-20241007101724406](./assets/image-20241007101724406.png)
+
+![image-20241007101910694](./assets/image-20241007101910694.png)
+
+![image-20241007101954023](./assets/image-20241007101954023.png)
+
+![image-20241007102832369](./assets/image-20241007102832369.png)
+
+![image-20241007103014136](./assets/image-20241007103014136.png)
+
+![image-20241007103723893](./assets/image-20241007103723893.png)
+
+![image-20241007104238775](./assets/image-20241007104238775.png)
+
+![image-20241007104255916](./assets/image-20241007104255916.png)
+
+![image-20241007104436205](./assets/image-20241007104436205.png)
+
+![image-20241007105257987](./assets/image-20241007105257987.png)
+
+![image-20241007105342248](./assets/image-20241007105342248.png)
+
+![image-20241007105407714](./assets/image-20241007105407714.png)
+
+![image-20241007105707208](./assets/image-20241007105707208.png)
+
+![image-20241007111633166](./assets/image-20241007111633166.png)
+
+![image-20241007124630726](./assets/image-20241007124630726.png)
+
+### Materials and Appearances
+
+[Lecture 17 Materials and Appearances_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?p=17&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+![image-20241007130150328](./assets/image-20241007130150328.png)
+
+![image-20241018231519559](./assets/image-20241018231519559.png)
+
+![image-20241018231550660](./assets/image-20241018231550660.png)
+
+![image-20241018232306038](./assets/image-20241018232306038.png)
+
+![image-20241018232635847](./assets/image-20241018232635847.png)
+
+![image-20241018232821286](./assets/image-20241018232821286.png)
+
+![image-20241018233004439](./assets/image-20241018233004439.png)
+
+![image-20241018233632803](./assets/image-20241018233632803.png)
+
+#### Microfacet Matrial
+
+![image-20241018233939046](./assets/image-20241018233939046.png)
+
+![image-20241018234021470](./assets/image-20241018234021470.png)
+
+![image-20241019204432927](./assets/image-20241019204432927.png)
+
+![image-20241019204527002](./assets/image-20241019204527002.png)
+
+![image-20241019204540158](./assets/image-20241019204540158.png)
+
+
+
