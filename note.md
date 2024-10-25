@@ -62,6 +62,8 @@ win + H
 
 #### 《Mob-FGSR: Frame Generation and Super Resolution for Mobile Real-Time Rendering》
 
+[Mob-FGSR: Frame Generation and Super Resolution for Mobile Real-Time Rendering](https://mob-fgsr.github.io/)
+
 [sites.cs.ucsb.edu/~lingqi/publications/paper_sig24mobfgsr.pdf](https://sites.cs.ucsb.edu/~lingqi/publications/paper_sig24mobfgsr.pdf)
 
 作者为浙江大学的Sipeng Yang、Qingchuan Zhu、Junhao Zhuge等人以及OPPO Computing & Graphics Research Institute的Qiang Qiu、Chen Li、Yuzhong Yan等人。
@@ -574,6 +576,12 @@ whisper xx.mp4 --model medium --language Chinese
 #### Forward vs Deferred vs Forward+
 
 [（译）Forward vs Deferred vs Forward+ Rendering with DirectX 11 | 登峰造极者，殊途亦同归。 (lfzxb.top)](https://www.lfzxb.top/forward-vs-deferred-vs-forward-plus/)
+
+#### 自定义渲染管线学习
+
+[GitHub - lwwhb/CustomRenderPipelineTutorials: Unity6的自定义渲染管线教程](https://github.com/lwwhb/CustomRenderPipelineTutorials)
+
+[Unity6 自定义渲染管线 | Unity 中文课堂](https://learn.u3d.cn/tutorial/unity6-srp?chapterId=65c0841fc10d56002023ef11#65d1c52579f56b002226603d)
 
 ### switch
 
@@ -1643,5 +1651,27 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 ![image-20241019204540158](./assets/image-20241019204540158.png)
 
+![image-20241019204624336](./assets/image-20241019204624336.png)
 
+### Cameras,Lenses and Light Fileds
+
+#### FOV
+
+![image-20241020221922351](./assets/image-20241020221922351.png)
+
+![image-20241020221958228](./assets/image-20241020221958228.png)
+
+#### Exposure
+
+![image-20241020222047165](./assets/image-20241020222047165.png)
+
+![image-20241020222335223](./assets/image-20241020222335223.png)
+
+![image-20241020222419806](./assets/image-20241020222419806.png)
+
+![image-20241021233050818](./assets/image-20241021233050818.png)
+
+![image-20241021233021803](./assets/image-20241021233021803.png)
+
+![image-20241021233858308](./assets/image-20241021233858308.png)
 
