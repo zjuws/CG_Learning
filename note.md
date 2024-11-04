@@ -4,11 +4,51 @@ win + H
 
 1. 分享一个很绝的思维，请一定要把它刻进你的 DNA 里。凡是发生皆有利于我，也就是说任何困难都是在帮助我们成长，让我们学会内观，完善自我。塞翁失马，焉知非福，老天每一次安排一定有他的理由。拥有这种心态和思维，积极面对一切所谓的坏事，最终也会转变成好事。每一件事情的发生都是在帮助我，就算是烂人闹事，我也能从中发现对我有利的一面，万物皆可为我所用，失败了，分手了，就是上天在保护我，朋友走散了，就是在帮助我净化圈子，一切都是为了我服务的。我渐渐把“这种事为什么会发生在我身上”的思想转变为“这种思想教会我什么”，然后我发现身边的一切都变了。记住这三句话：我的过去不等于我的未来，我的梦想远大于我的恐惧，我是一股不可阻挡的力量。
 
+### 口才
+
+简意赅表达、用细节带入画面感产生共情以及让观众感受到真诚，并通过具体事例进行了说明。
 
 
 
+## 数学
+
+### 泰勒公式
+
+[泰勒公式，39分钟，小白也直接上手！|高等数学_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV12G411U7tD/?spm_id_from=333.337.search-card.all.click&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+![image-20241102213554169](./assets/image-20241102213554169.png)
+
+![image-20241102213632795](./assets/image-20241102213632795.png)
+
+![image-20241102213700826](./assets/image-20241102213700826.png)
+
+### 最小二乘法
+
+[数学建模之数据拟合（3）：最小二乘法_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1q741177US/?spm_id_from=333.337.search-card.all.click&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+![image-20241102220840214](./assets/image-20241102220840214.png)
+
+### 傅里叶变换
+
+[B站首发！草履虫都能看懂的【傅里叶变换】讲解，清华大学李永乐老师教你如何理解傅里叶变换，辨清美颜和变声原理，！！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1aW4y1y7Hs/?spm_id_from=333.337.search-card.all.click&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+![image-20241103164132556](./assets/image-20241103164132556.png)
+
+[傅里叶变换这样学，何愁不会呢？直观理解傅里叶变换_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1uY411z7uk/?spm_id_from=333.337.search-card.all.click&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+![image-20241104222359561](./assets/image-20241104222359561.png)
+
+![image-20241104222434819](./assets/image-20241104222434819.png)
+
+![image-20241104222508937](./assets/image-20241104222508937.png)
 
 ## 图形
+
+### LK光流
+
+[经典光流算法Lucas-Kanade（有图助理解）-CSDN博客](https://blog.csdn.net/leviopku/article/details/121773298)
+
+![image-20241102213503616](./assets/image-20241102213503616.png)
 
 ### 论文阅读
 
@@ -1675,3 +1715,38 @@ The SIMD shuffle-and-fill functions, such as `simd_shuffle_and_fill_up` and `sim
 
 ![image-20241021233858308](./assets/image-20241021233858308.png)
 
+### Animation
+
+[Lecture 21 Animation_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744/?p=21&spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=c5f5babdad262f8e9b8356b8fad45391)
+
+> 《GAMES101 - 现代计算机图形学入门 - 闫令琪》视频主要介绍了现代计算机图形学的相关内容。包括动画与模拟，如动画历史、关键帧动画、质点弹簧系统等，还讲解了弹簧模型在物理仿真中的应用。介绍了用质点弹簧系统描述裙子，提到有限元方法和粒子系统，及其在不同场景的应用。同时涵盖了粒子系统、运动学以及动画制作中的 rigging 和动作捕捉等内容，包括动作捕捉的方法、问题及应用，最后预告了下节课内容。视频还提及了作业事宜和不同应用的帧率要求，以及动画电影制作成本高的原因。
+
+![image-20241027221752646](./assets/image-20241027221752646.png)
+
+#### Forward Kinematics
+
+![image-20241029230902598](./assets/image-20241029230902598.png)
+
+![image-20241029231015370](./assets/image-20241029231015370.png)
+
+#### Inverse Kinematics(运动学)
+
+![image-20241029231149857](./assets/image-20241029231149857.png)
+
+#### Rigging
+
+![image-20241029231512371](./assets/image-20241029231512371.png)
+
+#### Motion Capture
+
+![image-20241029231836304](./assets/image-20241029231836304.png)
+
+![image-20241029231904447](./assets/image-20241029231904447.png)
+
+![image-20241029232304785](./assets/image-20241029232304785.png)
+
+### Animation Cont
+
+[Lecture 22 Animation Cont._哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1X7411F744?spm_id_from=333.788.videopod.episodes&vd_source=c5f5babdad262f8e9b8356b8fad45391&p=22)
+
+> 在最后一节课中，讲解了动画和仿真中的物体运动模拟方法，如欧拉方法及其改进方法等数值方法和模拟技术，介绍了不同方法的特点和应用场景。课程结束时，还介绍了模拟大规模物质的方法，推荐了后续学习方向，并对相关会议进行了介绍。此外，视频还提到了胡彦明大神的编程语言及提高课、讲师的其他课程，最后讲述了讲师在渲染领域的成就及对科研的看法，鼓励大家提问和申请证书。
