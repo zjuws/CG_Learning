@@ -28,6 +28,8 @@ win + H
 
 ![image-20241102220840214](./assets/image-20241102220840214.png)
 
+![image-20241106202104159](./assets/image-20241106202104159.png)
+
 ### 傅里叶变换
 
 [B站首发！草履虫都能看懂的【傅里叶变换】讲解，清华大学李永乐老师教你如何理解傅里叶变换，辨清美颜和变声原理，！！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1aW4y1y7Hs/?spm_id_from=333.337.search-card.all.click&vd_source=c5f5babdad262f8e9b8356b8fad45391)
@@ -41,6 +43,12 @@ win + H
 ![image-20241104222434819](./assets/image-20241104222434819.png)
 
 ![image-20241104222508937](./assets/image-20241104222508937.png)
+
+#### 快速傅里叶变换（FFT)
+
+![image-20241109235523260](./assets/image-20241109235523260.png)
+
+![image-20241109235611839](./assets/image-20241109235611839.png)
 
 ## 图形
 
@@ -690,7 +698,7 @@ https://github.com/ConnectAI-E/feishu-openai?tab=readme-ov-file#详细配置步�
 * [Moo0 前端显示器 (免费) - 添加额外的有用的菜单到窗口](https://zhs.moo0.com/?top=https://zhs.moo0.com/software/WindowMenuPlus/)
 * [FSCapture.exe](..\..\tools\FSCapture100\FSCapture.exe) bluman VPISCJULXUFGDDXYAUYF
 * [marktext/marktext: 📝A simple and elegant markdown editor, available for Linux, macOS and Windows. (github.com)](https://github.com/marktext/marktext/tree/develop)
-* D:\tools\spacesniffer_1_3_0_2 [查看文件大小]
+* D:\tools\spacesniffer_1_3_0_ [SpaceSniffer.exe](..\..\tools\spacesniffer_1_3_0_2\SpaceSniffer.exe) 2  [查看文件大小]
 * 网页视频下载：[cobalt](https://cobalt.tools/)
 * Pixpin  [PixPin.exe](C:\Users\wangshu\AppData\Local\Programs\PixPin\PixPin.exe) 
 * [TrafficMonitor.exe](..\..\tools\TrafficMonitor\TrafficMonitor.exe) 
