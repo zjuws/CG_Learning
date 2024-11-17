@@ -20,6 +20,10 @@ win + H
 
 “**黑夜无论怎样悠长，白昼总会到来。**” 这句话出自莎士比亚的作品。它表达了一种乐观和坚定的信念，即无论遭遇多么漫长和黑暗的困境，总会有光明和希望到来，鼓励人们在艰难时刻保持信心和耐心。
 
+
+
+“**生活不止眼前的苟且，还有诗和远方的田野。**” 这句话提醒人们不要只被当下的琐碎和困难所束缚，要心怀梦想，追求更美好的精神世界和未来。
+
 ## 数学
 
 ### 泰勒公式
@@ -72,6 +76,38 @@ win + H
 
 ![image-20241116201755940](./assets/image-20241116201755940.png)
 
+### [825. 适龄的朋友 - 力扣（LeetCode）](https://leetcode.cn/problems/friends-of-appropriate-ages/description/)
+
+```c++
+class Solution {
+public:
+    int numFriendRequests(vector<int>& ages) {
+        int ans = 0;
+        int n = ages.size();
+        sort(ages.begin(), ages.end());
+        int left = 0;
+        int right = 0;
+        for (auto x : ages) {
+            if (x < 15) {
+                continue;
+            }
+            while(ages[left] <= 0.5 * x + 7) {
+                left++;
+            }
+            while(right < n && ages[right] <= x) {
+                right++;
+            }
+            ans += right - left -1;
+        }
+        return ans;
+    }
+};
+```
+
+方法一：排序 + 双指针
+
+方法二：计数排序 + 前缀和
+
 ## 图形
 
 ### LK光流
@@ -79,6 +115,8 @@ win + H
 [经典光流算法Lucas-Kanade（有图助理解）-CSDN博客](https://blog.csdn.net/leviopku/article/details/121773298)
 
 ![image-20241102213503616](./assets/image-20241102213503616.png)
+
+
 
 ### 论文阅读
 
@@ -363,15 +401,32 @@ http://www.cad.zju.edu.cn/home/rwang/projects/power-optimization/21powernet.pdf
   - 随着对高分辨率、高刷新率和高真实感的需求增加，实时渲染的计算工作量急剧上升，现有的超分辨率（SR）方法难以满足需求。
   - 现有方法主要利用低分辨率输入（如历史帧）中的信息，但这些输入缺乏高频细节，难以恢复高分辨率预测中的精细细节。
   - 更高的性能改进需要增加特征分辨率和减少网络带宽，但这两者难以兼顾，限制了高分辨率SR的发展。
+  
 - **方法概述**：
   - **利用高分辨率G-buffer**：将低分辨率（LR）图像和高分辨率G-buffer作为输入，通过预积分BRDF解调（BRDF Demodulation）将着色结果分解为预积分BRDF和解调辐照度分量，训练网络预测高分辨率辐照度，以更好地平衡质量和效率。
   - **H - Net网络架构**：采用像素解交织（pixel unshuffling）和交织（pixel shuffling）操作，无损地对齐高分辨率特征与低分辨率输入，并将特征融合到低分辨率网络主干中，同时保留高保真的高分辨率细节。
+  
 - **实验结果**：
   - **质量和性能比较**：在4×4和8×8上采样任务中，FuseSR方法在质量和性能上均显著优于其他基线方法。
   - **实时渲染讨论**：集成FuseSR方法到渲染管线中确实比原生渲染高分辨率图像减少了计算开销，并且可以增加现代游戏设计更复杂场景的潜力。
   - **消融实验**：验证了BRDF解调（BRDF Demodulation）和高分辨率G-buffer融合（HR G-buffer fusion）的有效性，以及像素解交织对齐策略（pixel unshuffling alignment strategy）的优越性。
+  
 - **结论**：
   - FuseSR方法能够根据相应的低分辨率帧预测高质量的4×4（甚至8×8）上采样重建，在质量和性能之间取得了出色的平衡，并且具有出色的通用性和时间稳定性。
+  
+  
+  
+#### Fast Extraction of Viewing Frustum Planes from the World View-Projection Matrix
+
+  ![image-20241117205125076](./assets/image-20241117205125076.png)
+
+  ![image-20241117205252917](./assets/image-20241117205252917.png)
+
+![image-20241117205355595](./assets/image-20241117205355595.png)
+
+![image-20241117205802674](./assets/image-20241117205802674.png)
+
+![image-20241117205815680](./assets/image-20241117205815680.png)
 
 ### git代理
 
