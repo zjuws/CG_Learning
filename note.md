@@ -792,6 +792,7 @@ https://github.com/ConnectAI-E/feishu-openai?tab=readme-ov-file#详细配置步�
 * 网页视频下载：[cobalt](https://cobalt.tools/)
 * Pixpin  [PixPin.exe](C:\Users\wangshu\AppData\Local\Programs\PixPin\PixPin.exe) 
 * [TrafficMonitor.exe](..\..\tools\TrafficMonitor\TrafficMonitor.exe) 
+* 绘图 https://excalidraw.com/
 
 ## 设计模式
 
