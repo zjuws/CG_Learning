@@ -445,73 +445,6 @@ http://www.cad.zju.edu.cn/home/rwang/projects/power-optimization/21powernet.pdf
 
 1. git config --global http.proxy http://127.0.0.1:9991
 2. git config --global https.proxy http://127.0.0.1:9991
-### Animatediff
-
-animatediff stylize generate "D:\development\animatediff-cli-prompt-travel\stylize\2023-10-06T09-33-16-sample-majicmix realistic 麦橘写实_v2威力加强典藏版"
-
-#### 网址
-
-[guoyww/AnimateDiff: Official implementation of AnimateDiff. (github.com)](https://github.com/guoyww/AnimateDiff)
-
-[s9roll7/animatediff-cli-prompt-travel: animatediff prompt travel (github.com)](https://github.com/s9roll7/animatediff-cli-prompt-travel)
-
-#### 流程
-
-```
-cd animatediff-cli
-venv\Scripts\activate.bat
-.\venv\Scripts\Activate.ps1
-
-# with this setup, it took about a minute to generate in my environment(RTX4090). VRAM usage was 6-7 GB
-# width 256 / height 384 / length 128 frames / context 16 frames
-animatediff generate -c config/prompts/prompt_travel.json -W 256 -H 384 -L 128 -C 16
-# 5min / 9-10GB
-animatediff generate -c config/prompts/prompt_travel.json -W 512 -H 768 -L 128 -C 16
-
-# upscale using controlnet (tile, line anime, ip2p, ref)
-# specify the directory of the frame generated in the above step
-# default config path is 'frames_dir/../prompt.json'
-# here, width=512 is specified, but even if the original size is 512, it is effective in increasing detail
-animatediff tile-upscale PATH_TO_TARGET_FRAME_DIRECTORY -c config/prompts/prompt_travel.json -W 512
-
-# upscale width to 768 (smoother than tile-upscale)
-animatediff refine PATH_TO_TARGET_FRAME_DIRECTORY -W 768
-# If generation takes an unusually long time, there is not enough vram.
-# Give up large size or reduce the size of the context.
-animatediff refine PATH_TO_TARGET_FRAME_DIRECTORY -W 1024 -C 6
-
-# change lora and prompt to make minor changes to the video.
-animatediff refine PATH_TO_TARGET_FRAME_DIRECTORY -c config/prompts/some_minor_changed.json
-```
-
-#### Video Sylization
-
-```
-cd animatediff-cli
-venv\Scripts\activate.bat
-
-# If you want to use the 'stylize' command, additional installation required
-python -m pip install -e .[stylize]
-
-# create config file from src video
-animatediff stylize create-config YOUR_SRC_MOVIE_FILE.mp4
-
-# Edit the config file by referring to the hint displayed in the log when the command finishes
-# It is recommended to specify a short length for the test run
-
-# generate(test run)
-# 16 frames
-animatediff stylize generate STYLYZE_DIR -L 16
-# 16 frames from the 200th frame
-animatediff stylize generate STYLYZE_DIR -L 16 -FO 200
-
-# If generation takes an unusually long time, there is not enough vram.
-# Give up large size or reduce the size of the context.
-
-# generate
-animatediff stylize generate STYLYZE_DIR
-```
-
 ### blender
 
 * SHIFT + MMB :  平移 
@@ -622,20 +555,6 @@ ai视频(d-id) https://studio.d-id.com/
 
 win11配置深度学习环境GPU https://zhuanlan.zhihu.com/p/460806048
 
-### AI
-
-[Civitai](https://civitai.com/)
-
-[Danbooru 标签超市 (novelai.dev)](https://tags.novelai.dev/)
-
-https://github.com/AUTOMATIC1111/stable-diffusion-webui
-
-[NovelAI.Dev](https://novelai.dev/)
-
-shift-attention [yownas/shift-attention: In stable diffusion, generate a sequence of images shifting attention in the prompt. (github.com)](https://github.com/yownas/shift-attention)
-
-python -m eval.interpolator_cli --pattern D:\development\stable-diffusion-webui\outputs\img2img-images\20230513214507 --model_path pretrained_models\film_net\Style\saved_model --times_to_interpolate 2
-
 ### 技巧
 
 ```js
@@ -688,15 +607,6 @@ button.click();
 ```
 ffmpeg -y -r 30.0 -i %5d.png -c:v libx264 -vf fps=30.0 -pix_fmt yuv420p -crf 17 -preset veryfast video.mp4
 ffmpeg -i output.mp4 -r 30 -f image2 %03d.png
-```
-
-### Edge TTS && whisper
-
-D:\development\Edge-tts
-
-```
-edge-tts.exe --voice zh-TW-HsiaoChenNeural --f .\output\output.txt --write-media .\output\output{AudioCount}.mp3 2>nul
-whisper xx.mp4 --model medium --language Chinese
 ```
 
 ### Unity学习
@@ -767,6 +677,120 @@ E:\dev\gaussian-splatting\viewers\bin\SIBR_gaussianViewer_app.exe
 colmap:[Tutorial — COLMAP 3.9-dev documentation](https://colmap.github.io/tutorial.html)
 
 https://github.com/ConnectAI-E/feishu-openai?tab=readme-ov-file#详细配置步骤)
+
+## AI
+
+### AI
+
+[Civitai](https://civitai.com/)
+
+[Danbooru 标签超市 (novelai.dev)](https://tags.novelai.dev/)
+
+https://github.com/AUTOMATIC1111/stable-diffusion-webui
+
+[NovelAI.Dev](https://novelai.dev/)
+
+shift-attention [yownas/shift-attention: In stable diffusion, generate a sequence of images shifting attention in the prompt. (github.com)](https://github.com/yownas/shift-attention)
+
+python -m eval.interpolator_cli --pattern D:\development\stable-diffusion-webui\outputs\img2img-images\20230513214507 --model_path pretrained_models\film_net\Style\saved_model --times_to_interpolate 2
+
+### Animatediff
+
+animatediff stylize generate "D:\development\animatediff-cli-prompt-travel\stylize\2023-10-06T09-33-16-sample-majicmix realistic 麦橘写实_v2威力加强典藏版"
+
+#### 网址
+
+[guoyww/AnimateDiff: Official implementation of AnimateDiff. (github.com)](https://github.com/guoyww/AnimateDiff)
+
+[s9roll7/animatediff-cli-prompt-travel: animatediff prompt travel (github.com)](https://github.com/s9roll7/animatediff-cli-prompt-travel)
+
+#### 流程
+
+```
+cd animatediff-cli
+venv\Scripts\activate.bat
+.\venv\Scripts\Activate.ps1
+
+# with this setup, it took about a minute to generate in my environment(RTX4090). VRAM usage was 6-7 GB
+# width 256 / height 384 / length 128 frames / context 16 frames
+animatediff generate -c config/prompts/prompt_travel.json -W 256 -H 384 -L 128 -C 16
+# 5min / 9-10GB
+animatediff generate -c config/prompts/prompt_travel.json -W 512 -H 768 -L 128 -C 16
+
+# upscale using controlnet (tile, line anime, ip2p, ref)
+# specify the directory of the frame generated in the above step
+# default config path is 'frames_dir/../prompt.json'
+# here, width=512 is specified, but even if the original size is 512, it is effective in increasing detail
+animatediff tile-upscale PATH_TO_TARGET_FRAME_DIRECTORY -c config/prompts/prompt_travel.json -W 512
+
+# upscale width to 768 (smoother than tile-upscale)
+animatediff refine PATH_TO_TARGET_FRAME_DIRECTORY -W 768
+# If generation takes an unusually long time, there is not enough vram.
+# Give up large size or reduce the size of the context.
+animatediff refine PATH_TO_TARGET_FRAME_DIRECTORY -W 1024 -C 6
+
+# change lora and prompt to make minor changes to the video.
+animatediff refine PATH_TO_TARGET_FRAME_DIRECTORY -c config/prompts/some_minor_changed.json
+```
+
+#### Video Sylization
+
+```
+cd animatediff-cli
+venv\Scripts\activate.bat
+
+# If you want to use the 'stylize' command, additional installation required
+python -m pip install -e .[stylize]
+
+# create config file from src video
+animatediff stylize create-config YOUR_SRC_MOVIE_FILE.mp4
+
+# Edit the config file by referring to the hint displayed in the log when the command finishes
+# It is recommended to specify a short length for the test run
+
+# generate(test run)
+# 16 frames
+animatediff stylize generate STYLYZE_DIR -L 16
+# 16 frames from the 200th frame
+animatediff stylize generate STYLYZE_DIR -L 16 -FO 200
+
+# If generation takes an unusually long time, there is not enough vram.
+# Give up large size or reduce the size of the context.
+
+# generate
+animatediff stylize generate STYLYZE_DIR
+```
+
+### Edge TTS && whisper
+
+D:\development\Edge-tts
+
+```
+edge-tts.exe --voice zh-TW-HsiaoChenNeural --f .\output\output.txt --write-media .\output\output{AudioCount}.mp3 2>nul
+whisper xx.mp4 --model medium --language Chinese
+```
+
+### Ollama
+
+https://ollama.com/
+
+Page Assist扩展
+
+AnyThing LLM
+
+```
+ollama run deepseek-r1:32b
+```
+
+### ComfyUI
+
+D:\development\ComfyUI-aki\ComfyUI-aki-v1.1
+
+D:\development\ComfyUI-aki\ComfyUI-aki-v1.1\output
+
+E:\wangshu\Videos\Materials
+
+E:\wangshu\Videos
 
 ## 实用工具
 
