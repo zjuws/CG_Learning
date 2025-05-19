@@ -678,7 +678,29 @@ colmap:[Tutorial — COLMAP 3.9-dev documentation](https://colmap.github.io/tuto
 
 https://github.com/ConnectAI-E/feishu-openai?tab=readme-ov-file#详细配置步骤)
 
+### vulkan
+
+![image-20250517203100925](./assets/image-20250517203100925.png)
+
+![image-20250517202832960](./assets/image-20250517202832960.png)
+
+![image-20250517202948716](./assets/image-20250517202948716.png)
+
 ## AI
+
+### huggingface下载
+
+```bash
+# Windows（PowerShell）
+$env:HF_ENDPOINT = "https://hf-mirror.com"
+```
+
+```bash
+huggingface-cli download [仓库ID] [文件名] --local-dir [保存路径]
+huggingface-cli download  --local-dir E:\wangshu\Downloads
+```
+
+![image-20250301231919945](./assets/image-20250301231919945.png)
 
 ### AI
 
@@ -800,7 +822,7 @@ E:\wangshu\Videos
 * WSL [linux环境]
 * win + V [剪切板]
 * XYplorer [文件浏览器]
-* TreeSize [查看文件大小]
+* TreeSize [查看文件大小] [TreeSizeFree.exe](..\..\tools\TreeSizeFree-Portable\TreeSizeFree.exe) 
 * Ghelper [翻墙]
 * aria2 [下载]
 * win +X [功能中心]
