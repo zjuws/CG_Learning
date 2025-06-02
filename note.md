@@ -842,6 +842,7 @@ E:\wangshu\Videos
 * [TrafficMonitor.exe](..\..\tools\TrafficMonitor\TrafficMonitor.exe) 
 * 绘图 https://excalidraw.com/
 * [Download - Obsidian](https://obsidian.md/download)
+* https://github.com/ViscousPot/GitSync?tab=readme-ov-file
 
 ## 设计模式
 
