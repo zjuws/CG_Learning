@@ -1,8 +1,0 @@
-邮箱随便填
-秘钥其实也可以随便
-suibian@163.com
-JCEKRV-4V7ZSU-PSQKQ7-G2NT2Q
-
-
-app.asar 文件要替换掉安装目录下的 resources 文件夹下的app.asar
-如果搞不懂，去看我之前写的博客 https://www.cnblogs.com/LiuDanK/articles/15638323.html

@@ -841,6 +841,7 @@ E:\wangshu\Videos
 * Pixpin  [PixPin.exe](C:\Users\wangshu\AppData\Local\Programs\PixPin\PixPin.exe) 
 * [TrafficMonitor.exe](..\..\tools\TrafficMonitor\TrafficMonitor.exe) 
 * 绘图 https://excalidraw.com/
+* [Download - Obsidian](https://obsidian.md/download)
 
 ## 设计模式
 
