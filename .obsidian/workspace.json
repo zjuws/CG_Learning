@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "note.md",
+                "file": "code.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "note"
+              "title": "code"
             }
           }
         ],
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "42eb5e84222e5254",
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note.md",
+                "file": "code.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "note 的反向链接列表"
+              "title": "code 的反向链接列表"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "note.md",
+                "file": "code.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "note 的大纲"
+              "title": "code 的大纲"
             }
           },
           {
@@ -181,7 +181,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 383.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -192,16 +192,22 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "6054d6a8118d94b8",
+  "active": "9376f479b3674f66",
   "lastOpenFiles": [
+    "assets/Pasted image 20250602144320.png",
+    "assets/Pasted image 20250602144136.png",
+    "note.md",
     "code.md",
+    "assets/Pasted image 20250602143848.png",
+    "Pasted image 20250602143558.png",
+    "RealTimeRendering4th/Real-Time+Rendering+4th+Edition-2018-英文版.pdf",
     "Excalidraw/Drawing 2025-06-02 14.05.18.excalidraw.md",
     "未命名.md",
     "未命名.canvas",
-    "note.md",
     "Excalidraw"
   ]
 }
