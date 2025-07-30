@@ -35,8 +35,7 @@
               "title": "vulkan"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vulkan.md",
+                "file": "note.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -119,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "vulkan 的反向链接列表"
+              "title": "note 的反向链接列表"
             }
           },
           {
@@ -157,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vulkan.md",
+                "file": "note.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "vulkan 的大纲"
+              "title": "note 的大纲"
             }
           },
           {
@@ -177,11 +176,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 383.5
+    "width": 338.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,12 +196,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "7acf4e95471d51e6",
+  "active": "9376f479b3674f66",
   "lastOpenFiles": [
     "README.md",
+    "note.md",
     "vulkan.md",
     "未命名.md",
-    "note.md",
     "code.md",
     "assets/Pasted image 20250602144320.png",
     "assets/Pasted image 20250602144136.png",
